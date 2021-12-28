@@ -1,0 +1,5 @@
+npx create-react-app resume --template=typescript
+npm install -S styled-components react-router-dom dotenv
+npm install --save-dev @types/styled-components babel-plugin-styled-components @types/react-router-dom
+npm install -g axios recoil
+npm install recoil
