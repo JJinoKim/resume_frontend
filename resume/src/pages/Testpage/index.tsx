@@ -1,11 +1,11 @@
 import React from 'react';
 
-const auth = () => {
+const Test = () => {
     return (
         <div>
-            로그인 페이지
+            테스트페이지
         </div>
     );
 };
 
-export default auth;
+export default Test;

@@ -1,9 +1,12 @@
-import React from 'react'
-import { useRecoilState, useSetRecoilState } from 'recoil'
 import { Link } from 'react-router-dom'
 
 
-const header = () => {
+const Header = () => {
+    const goLink = () => {
+        // return (
+        //     <Link to={'/main'}>Home</Link>
+        // )
+    }
     return (
         <ul>
             <li>
@@ -12,8 +15,11 @@ const header = () => {
             <li>
                 <Link to={'/login'}>Login</Link>
             </li>
+            <li>
+                <Link to={'/test'}>Test</Link>
+            </li>
         </ul>
     );
 };
 
-export default header;
+export default Header;

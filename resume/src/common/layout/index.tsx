@@ -1,9 +1,24 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
-import Header from './header';
-import Main from '../../pages/home/main'
-import Login from '../../pages/auth'
+import "styled-components";
+
+import Header from './Header';
+import Main from '../../pages/home/Main'
+import Login from '../../pages/auth/Login'
+import Register from '../../pages/auth/Register'
+import Test from '../../pages/Testpage';
+
+
+declare module "styled-components" {
+    export interface DefaultTheme {
+        basicWidth: string;
+
+        color: {
+            main: string;
+            sub: string;
+        };
+    }
+}
 
 const index = () => {
     return (
@@ -12,7 +27,9 @@ const index = () => {
             <main>
                 <Routes>
                     <Route path={'/Main'} element={<Main />} />
-                    <Route path={'/Login'} element={<Login />} />
+                    <Route path={'/login'} element={<Login />} />
+                    <Route path={'/register'} element={<Register />} />
+                    <Route path={'/test'} element={<Test />} />
                 </Routes>
             </main>
         </Router>

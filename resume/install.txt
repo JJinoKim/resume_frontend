@@ -3,3 +3,9 @@ npm install -S styled-components react-router-dom dotenv
 npm install --save-dev @types/styled-components babel-plugin-styled-components @types/react-router-dom
 npm install -g axios recoil
 npm install recoil
+
+yarn add redux react-redux redux-actions immer redux-devtools-extension
+npm install @reduxjs/toolkit
+
+yarn add styled-components @types/styled-components styled-normalize
+npm install styled-reset
